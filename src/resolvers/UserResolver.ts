@@ -89,7 +89,7 @@ export class UserResolver{
                     
                 }; 
             }
-
+//this is the register mutation 
     @Mutation(()=>Boolean)
         async register(@Arg("email") email:string,@Arg("password") password:string,){
             const hashedPassword = await hash(password, 12);
